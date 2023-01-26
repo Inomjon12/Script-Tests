@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <input type="text" id="firstNumber" value="0" />
+    <input type="text" id="secondNumber" value="0" />
+    <button type="button" id="compareButton">Compare</button>
+    <p>The bigger number is: <span id="biggerNumber"></span></p>
+
+    <script>
+      var firstNumber = document.getElementById("firstNumber");
+      var secondNumber = document.getElementById("secondNumber");
+      var compareButton = document.getElementById("compareButton");
+      var biggerNumber = document.getElementById("biggerNumber");
+      compareButton.onclick = function () {
+        if (firstNumber.value > secondNumber.value) {
+          biggerNumber.innerHTML = firstNumber.value;
+        } else {
+          biggerNumber.innerHTML = secondNumber.value;
+        }
+      };
+    </script>
+  </body>
+</html>
